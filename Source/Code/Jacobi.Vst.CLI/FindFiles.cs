@@ -7,6 +7,8 @@ namespace Jacobi.Vst.CLI
 {
     internal sealed class FindFiles
     {
+        // DONT FORGET TO UPDATE `runtimeconfig.json` IF YOU UPDATE DOTNET VERSION!!
+
         // Interop mixed C++/CLR project does not publish dependencies.
         // Manually maintain them here.
         private static readonly string[] InteropDependencies = new[]

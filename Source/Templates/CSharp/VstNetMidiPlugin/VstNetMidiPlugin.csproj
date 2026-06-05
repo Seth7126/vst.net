@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="VST.NET2-Plugin" Version="2.1.1" />
+    <PackageReference Include="VST.NET2-Plugin" Version="2.1.8" />
   </ItemGroup>
 
 </Project>

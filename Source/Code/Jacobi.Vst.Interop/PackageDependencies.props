@@ -3,10 +3,12 @@
   <PropertyGroup>
     <!-- Maintain packages manually -->
     <PackageDir>$(USERPROFILE)\.nuget\packages\</PackageDir>
-    <MsExtConfig>$(PackageDir)microsoft.extensions.configuration\5.0.0\lib\netstandard2.0</MsExtConfig>
-    <MsExtConfigAbstr>$(PackageDir)microsoft.extensions.configuration.abstractions\5.0.0\lib\netstandard2.0</MsExtConfigAbstr>
-    <MsExtConfigFileExt>$(PackageDir)microsoft.extensions.configuration.fileextensions\5.0.0\lib\netstandard2.0</MsExtConfigFileExt>
-    <MsExtConfigJson>$(PackageDir)microsoft.extensions.configuration.json\5.0.0\lib\netstandard2.1</MsExtConfigJson>
+    <DotNetVersion>net8.0</DotNetVersion>
+    <MicrosoftExtensionsConfigurationVersion>8.0.0</MicrosoftExtensionsConfigurationVersion>
+    <MsExtConfig>$(PackageDir)microsoft.extensions.configuration\$(MicrosoftExtensionsConfigurationVersion)\lib\$(DotNetVersion)</MsExtConfig>
+    <MsExtConfigAbstr>$(PackageDir)microsoft.extensions.configuration.abstractions\$(MicrosoftExtensionsConfigurationVersion)\lib\$(DotNetVersion)</MsExtConfigAbstr>
+    <MsExtConfigFileExt>$(PackageDir)microsoft.extensions.configuration.fileextensions\$(MicrosoftExtensionsConfigurationVersion)\lib\$(DotNetVersion)</MsExtConfigFileExt>
+    <MsExtConfigJson>$(PackageDir)microsoft.extensions.configuration.json\$(MicrosoftExtensionsConfigurationVersion)\lib\$(DotNetVersion)</MsExtConfigJson>
     <PackageDependencies>$(MsExtConfig);$(MsExtConfigAbstr);$(MsExtConfigJson);$(MsExtConfigFileExt)</PackageDependencies>
   </PropertyGroup>
 </Project>

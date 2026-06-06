@@ -27,6 +27,24 @@ You may also have to perform actions in the host application to get it to call t
 For investigating plugin loading problems, it may be beneficial to break on all Exceptions.
 That can be found on the `Debug => Windows => Exception Settings...` menu. Look for `Common Language Runtime Exceptions`.
 
+### DOTNET TRACE
+
+If the plugin really does not want to load in the host application - or you have other loading-related problems,
+you can try to turn on the dotnet trace.
+
+https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-environment-variables#dotnet_host_trace
+
+Start a Terminal session and set the following environment variables:
+
+- `DOTNET_HOST_TRACEFILE=<file>` the path and name of the file receiving the trace log*.
+- `DOTNET_HOST_TRACE=1` Turns on the dot net trace.
+
+*) If you leave out the (absolute) path, the file will most likely be created at the location of the plugin.
+
+Start the host application from within the terminal so it inherits the environment variables and load the plugin again.
+
+Locate and examine the trace log file and hunt for clues. Good luck.
+
 ## Host
 
 Because you are building a managed host, debugging it is a simple matter of making a debug build and hitting F5.

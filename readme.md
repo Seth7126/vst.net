@@ -34,12 +34,6 @@ Discuss on the `VST.NET` Discord Server: https://discord.gg/QyZqQDk
 
 Anyone can join and do not hesitate to ask a question or start a discussion.
 
-### Facebook
-
-![](docs/_old/media/Home_facebook_logo_48x48.jpg)
-
-There is a Facebook page [here](http://www.facebook.com/pages/Virtual-Studio-Technology-for-NET/150408134989174).
-
 ### Contribute
 
 If you have a great idea for a new feature, have a suggestion or have found a bug, please [create an issue on github](https://github.com/obiwanjacobi/vst.net/issues). Use the appropriate template.
